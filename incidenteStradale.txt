@@ -1,0 +1,87 @@
+-- Github: MerolaITCG
+group: incidenteStradale 
+
+PERSONA = {
+ id:number, nome:string, cognome:string, annonascita:number
+
+1	Marco	Rossi	1990
+2	Anna	Bianchi	1985
+3	Luca	Verdi	2000
+4	Maria	Neri	1992
+5	Giovanni	Ferrari	1987
+6	Laura	Galli	1995
+7	Paolo	Mancini	1982
+8	Chiara	Romano	1998
+9	Francesco	Lupo	1993
+10	Sara	Greco	1997
+}
+
+MACCHINA = {
+
+targa:string, modello:string, anno:number
+
+AB123CD	'Fiat Panda'	2015
+XY456ZT	'Audi A3'	2018
+CD789EF	'BMW Serie 3'	2020
+FG234HI	'Renault Clio'	2017
+IJ567KL	'Mercedes A180'	2019
+MN890OP	'Toyota Yaris'	2021
+PQ123RS	'Volkswagen Golf'	2020
+ST456UV	'Ford Focus'	2016
+VW789XY	'Nissan Qashqai'	2022
+ZA234BC	'Peugeot 208'	2018
+}
+
+INCIDENTE = {
+numero:number, data:date, luogo:string
+
+1	2023-05-01	Milano
+2	2023-06-15	Roma
+3	2023-07-20	Torino
+4	2023-08-10	Napoli
+5	2023-09-05	Firenze
+6	2023-10-25	Bologna
+7	2023-11-12	Genova
+8	2023-12-03	Venezia
+9	2024-01-18	Palermo
+10	2024-02-22	Cagliari
+
+}
+
+PROPRIETARI = {
+id_person:number, targa:string
+1 ZA234BC
+2 XY456ZT
+4 PQ123RS
+7 IJ567KL
+3 VW789XY
+6 MN890OP
+9 CD789EF
+1 ST456UV
+}
+
+PARTECIPA = {
+id_persona:number,macchina:string,numero_incidente:number,costo:number
+
+3 VW789XY 2 6023
+3 VW789XY 7 3426
+3 VW789XY 1 7531
+1 ST456UV 6 7945
+9 CD789EF 1 3505
+9 CD789EF 7 3646
+1 ZA234BC 6 2723
+9 CD789EF 8 5852
+7 IJ567KL 5 5087
+1 ST456UV 6 7775
+7 IJ567KL 10 2757
+9 CD789EF 4 2778
+1 ST456UV 8 3408
+2 XY456ZT 4 4049
+6 MN890OP 2 7087
+9 CD789EF 8 6753
+7 IJ567KL 10 3623
+7 IJ567KL 10 5131
+1 ZA234BC 8 6806
+6 MN890OP 10 3524
+
+}
